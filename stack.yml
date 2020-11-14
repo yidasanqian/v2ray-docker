@@ -5,7 +5,7 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
-    image: yidasanqian/v2ray
+    image: okteto.dev/v2ray-app
     ports:
       - 8080
     resources:
