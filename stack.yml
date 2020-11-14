@@ -2,10 +2,12 @@ name: v2ray-app
 services:
   v2ray:
     public: true
-    build: .
+    build: 
+      context: .
     image: yidasanqian/v2ray
     ports:
       - 8080
     resources:
       cpu: 100m
       memory: 128Mi
+      storage: 128Mi
