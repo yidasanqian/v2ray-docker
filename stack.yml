@@ -4,6 +4,7 @@ services:
     public: true
     build: 
       context: .
+      dockerfile: Dockerfile
     image: yidasanqian/v2ray
     ports:
       - 8080
