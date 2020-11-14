@@ -2,7 +2,7 @@ name: v2ray-app
 services:
   v2ray:
     public: true
-    build: v2ray
+    build: .
     image: yidasanqian/v2ray
     ports:
       - 8080
