@@ -44,7 +44,7 @@ jobs:
           load: true
           tags: v2ray:latest
       - name: run v2ray
-        run: docker run -p8080:8080 v2ray:latest 
+        run: docker run --name=v2ray -p8080:8080 -d v2ray:latest 
                              
       - name: Start SSH via ngrok
         uses: P3TERX/ssh2actions@main
